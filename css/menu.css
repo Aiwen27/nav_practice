@@ -1,0 +1,76 @@
+nav{
+    /*tamaño del menu ancho y alto*/
+    width: 615px;
+    height: 30px;
+     /*centrado del menu*/
+     margin: 0 auto;
+     /*transiciones en las opciones del menu*/
+     transition: all 0.3s ease-in-out;
+}
+
+ul{
+    /*para que no salgan las viñetas*/
+    list-style: none;
+} 
+
+#menu{
+    position: absolute;
+    /*prioridad*/
+    z-index: 100;
+    left: 26%;
+}
+
+    /*se refiere a las opciones de la lista con <a href>*/
+    #menu li>a {
+    /*fondo del menu*/
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    }
+
+
+/*se refiere al hacer click encima del elemento*/
+    #menu li>a:hover {
+        color: #098085;
+        background-color: #eaeaea;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    #menu>li {
+        /*flota todo el menu a la izq*/
+        float: left;
+         /*permite centrar las opciones*/
+         text-align: center;
+         width: 120px;
+
+    }
+
+     /*permite ocultar  las opciones del menu*/
+
+    #menu>li>ul {
+        display: none;
+    }
+
+    /*cuando se pasa el mouse se muestra el bloque*/
+
+    #menu>li:hover>ul {
+        display: block;
+}
+
+.efecto1 {
+	transition: 1s ease-in;
+	cursor: pointer;
+	opacity: 0.5;
+	width: 25%;
+}
+
+.efecto1:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.5);
+    transition: 1s ease-in;
+ }
